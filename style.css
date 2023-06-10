@@ -7,9 +7,14 @@
 body {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: #e0e3eb;
+}
+.error {
+    color: #2f9fff;
+    margin: 15px;
 }
 .container {
     position: relative;
