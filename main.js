@@ -34,15 +34,8 @@ const calculate = (btnValue) => {
 const displayError = (message) => {
   // Create or update an error element to display the error message
     const errorElement = document.querySelector('.error');
-    if (errorElement) {
+
     errorElement.textContent = message;
-    } else {
-    const errorDiv = document.createElement('div');
-    errorDiv.classList.add('error');
-    errorDiv.textContent = message;
-    // Append the error element to the DOM (e.g., below the calculator display)
-    display.parentElement.appendChild(errorDiv);
-    }
 }
 
 buttons.forEach((btn) =>
